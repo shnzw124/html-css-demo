@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+/* 共通部分 */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+  color: #555;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%; /* 画像が親要素よりも大きくなることが防ぐ */
+}
+
+/* HEADER */
+header {
+  background-color: #EFA358;
+  color: #fff;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 207px;
+}
+
+.header-logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+}
+
+.nav li {
+  font-size: 20px;
+  padding: 10px 20px;
+}
+
+/* TOP */
+.top {
+  background-image: url(../images/fv.jpg);
+  background-size: cover;
+  background-position: center top;
+  height: 603px; /* MEMO:画像の表示には高さの指定が必要 */
+}
+
+/* CONTENT */
+.main {
+  height: 544px;
+  background-color: #fff;
+}
+
+.main-title {
+  text-align: center;
+  margin: 40px auto 42px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.image {
+  width: 480px;
+  height: 329px;
+}
+
+.btn {
+  width: 197px;
+  height: 47px;
+  color: #fff;
+  background-color: #EFA358;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 3px 6px rgba(0,0,0,.16);
+}
+
+/* FOOTER */
+footer {
+  background-color: #EFA358;
+  color: #fff;
+  text-align: center;
+}
+
+footer h2 {
+  padding: 19px 0 10px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+footer p {
+  padding: 10px 0 20px 0;
+  font-size: 12px;
+}
