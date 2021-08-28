@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/* 共通部分 */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* line-height: 1.7; */
+  color: #555;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%; /* 画像が親要素よりも大きくなることが防ぐ */
+}
+
+/* HEADER */
+header {
+  background-color: #EFA358;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 207px;
+}
+
+.header-logo {
+  font-size: 28px;
+  font-weight: bold;
+  padding: 26px 0 23px 24px;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+}
+
+.nav li {
+  font-size: 20px;
+  padding: 31px 20px 27px 0;
+}
+
+/* TOP */
+.top {
+  background-image: url(../images/fv.jpg);
+  background-size: cover;
+  background-position: center top;
+  height: 603px; /* MEMO:画像の表示には高さの指定が必要 */
+}
+
+/* CONTENT */
+.main {
+  height: 544px;
+  background-color: #fff;
+}
+
+.main-title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  padding: 40px 0 42px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-text h3 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.main-text p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.image {
+  width: 480px;
+  height: 329px;
+}
+
+.btn {
+  width: 197px;
+  height: 47px;
+  color: #fff;
+  background-color: #EFA358;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 3px 6px rgba(0,0,0,.16);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  background-color: #EFA358;
+  color: #fff;
+  text-align: center;
+}
+
+footer h2 {
+  padding: 19px 0 10px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+footer p {
+  padding: 10px 0 20px 0;
+}
+
+small {
+  font-size: 12px;
+}
