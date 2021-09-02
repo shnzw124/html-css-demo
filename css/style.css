@@ -7,7 +7,6 @@ html {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  /* line-height: 1.7; */
   color: #555;
 }
 
@@ -48,17 +47,18 @@ header {
   padding: 31px 20px 27px 0;
 }
 
+.fa-bars {
+  display: none;
+  padding: 27px 20px 26px 0;
+}
+
 /* TOP */
-.top {
-  background-image: url(../images/fv.jpg);
-  background-size: cover;
-  background-position: center top;
-  height: 603px; /* MEMO:画像の表示には高さの指定が必要 */
+.top img {
+  width: 100%;
 }
 
 /* CONTENT */
 .main {
-  height: 544px;
   background-color: #fff;
 }
 
@@ -71,7 +71,9 @@ header {
 
 .main-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 62px;
+  margin-bottom: 97px;
 }
 
 .main-text h3 {
@@ -83,11 +85,6 @@ header {
 .main-text p {
   font-size: 16px;
   margin-bottom: 30px;
-}
-
-.image {
-  width: 480px;
-  height: 329px;
 }
 
 .btn {
@@ -121,4 +118,110 @@ footer p {
 
 small {
   font-size: 12px;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+
+  /* CONTENT */
+  .main {
+    margin: 0 auto;
+  }
+
+  .main-title {
+    font-size: 24px;
+    padding: 20px 0;
+  }
+
+  .main-content {
+    gap: 20px;
+  } 
+
+  .main-text {
+    text-align: center;
+  }
+
+  .main-text h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  .main-text p {
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
+
+  img {
+    width: 50vw;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 414px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+
+  /* HEADER */
+  .header-logo {
+    font-size: 24px;
+    padding: 26px 0 23px 0;
+  }
+
+  .nav li {
+    display: none;
+  }
+
+  .fa-bars {
+    display: block;
+    padding: 23px 0;
+  }
+
+  /* CONTENT */
+  .main {
+    margin: 0 auto;
+  }
+
+  .main-title {
+    font-size: 24px;
+    padding: 20px 0;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  .main-text {
+    text-align: center;
+  }
+
+  .main-text h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  .main-text p {
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
+
+  img {
+    width: 100vw;
+    margin: 0 auto;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
 }
